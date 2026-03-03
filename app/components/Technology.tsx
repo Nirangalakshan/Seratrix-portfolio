@@ -1,40 +1,29 @@
-import { Terminal, Cpu, Cloud, Brain } from "lucide-react";
+import { Terminal, Cpu, Cloud, Database } from "lucide-react";
 
 const technologies = [
   {
-    category: "Software Engineering",
+    category: "Fullstack Web",
     icon: Terminal,
     color: "text-brand-cyan",
     items: [
       "React & Next.js",
-      "TypeScript",
-      "Rust",
-      "Python",
-      "Node.js High Scale",
+      "TypeScript & Node.js",
+      "POS Systems Architecture",
+      "Business Portfolios",
+      "AI Integrations",
+      "Streamlined Deployments",
     ],
   },
   {
-    category: "AI & Intelligence",
-    icon: Brain,
-    color: "text-brand-purple",
-    items: [
-      "PyTorch & TensorFlow",
-      "Llama & OpenAI LLMs",
-      "Computer Vision",
-      "Predictive Analytics",
-      "Edge AI",
-    ],
-  },
-  {
-    category: "Cloud Infrastructure",
+    category: "Cloud Engineering",
     icon: Cloud,
     color: "text-brand-blue",
     items: [
-      "AWS & Azure",
-      "Kubernetes (K8s)",
-      "Docker",
-      "Terraform IaaS",
-      "Serverless Architecture",
+      "Google Cloud Platform (GCP)",
+      "Kubernetes (GKE)",
+      "Microservices Architecture",
+      "Terraform & IaC",
+      "Serverless Modernization",
     ],
   },
   {
@@ -44,9 +33,21 @@ const technologies = [
     items: [
       "Embedded C/C++",
       "ESP32 & ARM Cortex",
-      "Custom PCB Design",
+      "Custom Firmware",
       "Industrial Sensors",
       "RTOS",
+    ],
+  },
+  {
+    category: "Software Solutions",
+    icon: Database,
+    color: "text-brand-purple",
+    items: [
+      "Scalable Architectures",
+      "Distributed Systems",
+      "Performance Optimization",
+      "API Integrations",
+      "Legacy Code Modernization",
     ],
   },
 ];
@@ -57,7 +58,7 @@ export default function Technology() {
       id="technology"
       className="section-padding bg-muted/30 dark:bg-background relative overflow-hidden transition-colors"
     >
-      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+      <div className="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-border to-transparent" />
 
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">

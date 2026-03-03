@@ -1,41 +1,29 @@
-import { Code, Bot, Cloud, Cpu, Activity, Server } from "lucide-react";
+import { Code, Laptop, Cloud, Cpu } from "lucide-react";
 
 const services = [
   {
-    title: "Custom Software",
+    title: "Software Solutions",
     description:
       "High-performance, scalable applications tailored to complex enterprise needs. We build the digital backbone of your business.",
     icon: Code,
   },
   {
-    title: "AI & Machine Learning",
+    title: "Fullstack Web Solutions",
     description:
-      "Intelligent algorithms that optimize processes, predict outcomes, and automate decision-making at scale.",
-    icon: Bot,
+      "Comprehensive web development including POS systems, business portfolios, and automated deployments for global scale.",
+    icon: Laptop,
   },
   {
-    title: "Cloud & DevOps",
+    title: "IOT Solutions",
     description:
-      "Resilient infrastructure and CI/CD pipelines ensuring maximum uptime and rapid deployment velocity.",
-    icon: Cloud,
-  },
-  {
-    title: "Embedded Systems & IoT",
-    description:
-      "Bridging the physical and digital. Custom firmware and hardware integration for smart device ecosystems.",
+      "Bridging the physical and digital realms. Custom firmware, hardware integration, and intelligent device ecosystems.",
     icon: Cpu,
   },
   {
-    title: "Intelligent Automation",
+    title: "GCP Cloud Services",
     description:
-      "End-to-end process automation reducing manual overhead and increasing operational precision.",
-    icon: Activity,
-  },
-  {
-    title: "System Architecture",
-    description:
-      "Robust, future-proof architectural patterns designed for microservices and distributed computing.",
-    icon: Server,
+      "Leveraging Google Cloud Platform for resilient infrastructure, cloud-native deployments, and managed services.",
+    icon: Cloud,
   },
 ];
 
@@ -59,7 +47,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {services.map((s, i) => (
             <div
               key={i}

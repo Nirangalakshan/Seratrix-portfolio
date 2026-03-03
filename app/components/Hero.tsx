@@ -78,29 +78,29 @@ export default function Hero() {
           className="relative group hidden lg:block justify-self-center lg:justify-self-end w-full max-w-sm xl:max-w-md"
         >
           {/* Glowing backdrops to set the stage for Screen blending */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%] bg-brand-cyan/20 rounded-full blur-[100px] opacity-30 animate-pulse pointer-events-none"></div>
+          {/* <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%] bg-brand-cyan/20 rounded-full blur-[100px] opacity-30 animate-pulse pointer-events-none"></div> */}
 
           <motion.div
             animate={{
-              y: [0, -15, 0],
+              y: [0, 0, 0],
             }}
             transition={{
               duration: 6,
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="relative"
+            className="relative mt-10 pointer-events-none"
           >
             {/* 
               Using mix-blend-mode: screen here effectively "removes" the dark background of the image,
               allowing only the lighter, glowy elements to show through and blend with our page background.
             */}
             <Image
-              src="/images/Software Solutions.png"
+              src="/images/hero.png"
               alt="Seratrix Intelligent Solutions"
-              width={1000}
-              height={1000}
-              className="w-full h-auto object-contain mix-blend-screen"
+              width={800}
+              height={800}
+              className="w-200 h-150 overflow-hidden mix-blend-screen rounded-4xl"
               priority
             />
           </motion.div>
@@ -121,7 +121,7 @@ export default function Hero() {
             alt="Seratrix Intelligent Solutions"
             width={600}
             height={600}
-            className="w-full h-auto object-contain mix-blend-screen"
+            className="w-full h-auto object-contain mix-blend-screen rounded-xl"
           />
         </motion.div>
       </div>

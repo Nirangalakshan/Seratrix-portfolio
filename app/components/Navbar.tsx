@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { ModeToggle } from "./mode-toggle";
+// import { ModeToggle } from "./mode-toggle";
+import Image from "next/image";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -26,7 +27,7 @@ export default function Navbar() {
           href="/"
           className="font-display text-2xl font-bold tracking-wider text-foreground"
         >
-          SERATRIX
+          <Image src="/logos/logo.png" alt="Logo" width={150} height={150} />
         </Link>
         <div className="hidden md:flex space-x-8 text-sm font-medium text-muted-foreground">
           <Link
@@ -61,7 +62,7 @@ export default function Navbar() {
           >
             Partner With Us
           </Link>
-          <ModeToggle />
+          {/* <ModeToggle /> */}
         </div>
       </div>
     </nav>
