@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 
 export const metadata: Metadata = {
-  title: "Seratrix",
+  title: "Seratrix | Intelligent Systems",
   description:
     "End-to-end intelligent systems combining software engineering, AI, cloud, embedded systems, IoT, and automation.",
   icons: {
