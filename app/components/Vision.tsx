@@ -7,17 +7,17 @@ const roadmap = [
   {
     year: "2025",
     title: "Foundation",
-    desc: "Core intelligent system architecture development. Launch of pilot IoT modules.",
+    desc: "Build the core Seratrix intelligent systems platform. Launch pilot AI and IoT solutions with early partners. Validate performance through real-world deployments.",
   },
   {
     year: "2026",
     title: "Integration",
-    desc: "Expansion of AI interoperability with legacy industrial hardware.",
+    desc: "Expand deployments across industries. Integrate AI capabilities with existing enterprise and industrial systems. Deliver connected, data-driven operations.",
   },
   {
     year: "2027",
-    title: "Autonomy",
-    desc: "Full-scale autonomous decision engines deployment for enterprise clients.",
+    title: "Intelligent Automation",
+    desc: "Introduce advanced automation and decision-support systems. Enable predictive, efficient, and scalable operations. Support organizations in building smarter digital infrastructure.",
   },
 ];
 
