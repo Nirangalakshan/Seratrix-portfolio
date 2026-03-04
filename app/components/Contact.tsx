@@ -239,7 +239,7 @@ export default function Contact() {
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
             <div className="flex items-center gap-2 font-display text-lg font-bold text-foreground">
               <div className="w-8 h-8 rounded-lg bg-linear-to-br from-brand-cyan to-brand-blue flex items-center justify-center text-white text-[10px]">
-                SX
+                <img src="/logos/label3.ico" alt="Logo" />
               </div>
               Seratrix
             </div>
