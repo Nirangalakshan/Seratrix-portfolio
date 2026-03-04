@@ -7,7 +7,10 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-screen overflow-hidden bg-background flex items-center justify-center antialiased transition-colors py-20 lg:py-0">
+    <section
+      id="hero"
+      className="relative w-full min-h-screen overflow-hidden bg-background flex items-center justify-center antialiased transition-colors py-20 lg:py-0"
+    >
       <div className="relative z-20 max-w-8xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <motion.div
@@ -78,11 +81,11 @@ export default function Hero() {
           className="relative group hidden lg:block justify-self-center lg:justify-self-end w-full max-w-sm xl:max-w-md"
         >
           {/* Glowing backdrops to set the stage for Screen blending */}
-          {/* <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%] bg-brand-cyan/20 rounded-full blur-[100px] opacity-30 animate-pulse pointer-events-none"></div> */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%] bg-brand-cyan/10 rounded-full blur-[100px] opacity-30 animate-pulse pointer-events-none"></div>
 
           <motion.div
             animate={{
-              y: [0, 0, 0],
+              y: [0, -15, 0],
             }}
             transition={{
               duration: 6,

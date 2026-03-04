@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./components/theme-provider";
+import { SectionTitleUpdater } from "./components/SectionTitleUpdater";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 
 export const metadata: Metadata = {
-  title: "| Seratrix",
+  title: "Seratrix | Engineering Intelligence",
   description:
     "End-to-end intelligent systems combining software engineering, AI, cloud, embedded systems, IoT, and automation.",
   icons: {
@@ -31,6 +32,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <SectionTitleUpdater />
           {children}
         </ThemeProvider>
       </body>
