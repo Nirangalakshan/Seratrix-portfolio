@@ -105,7 +105,7 @@ export default function Vision() {
                   transition={{ delay: i * 0.15 }}
                   className="group relative"
                 >
-                  <div className="relative aspect-4/5 rounded-2xl overflow-hidden bg-linear-to-b from-brand-cyan/5 to-brand-blue/10 border border-white/10 group-hover:border-brand-cyan/30 transition-colors duration-500 shadow-xl">
+                  <div className="relative w-full aspect-4/5 rounded-2xl overflow-hidden bg-muted/20 border border-white/10 group-hover:border-brand-cyan/40 transition-all duration-500 shadow-xl">
                     <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 flex flex-col justify-end p-4">
                       <p className="text-white font-bold text-lg leading-none">
                         {founder.name}
@@ -118,7 +118,7 @@ export default function Vision() {
                       src={founder.image}
                       alt={founder.name}
                       fill
-                      className="object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-110"
+                      className="object-cover object-center grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105"
                     />
                   </div>
                 </motion.div>
