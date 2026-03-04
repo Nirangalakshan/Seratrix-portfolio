@@ -120,7 +120,7 @@ export default function Hero() {
         >
           <div className="absolute -inset-10 bg-brand-cyan/10 rounded-full blur-[60px]"></div>
           <Image
-            src="/images/startup_solutions_hero_1770647347498.png"
+            src="/images/hero.png"
             alt="Seratrix Intelligent Solutions"
             width={600}
             height={600}
