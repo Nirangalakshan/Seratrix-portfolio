@@ -1,25 +1,25 @@
-import { Factory, Activity, Car, Zap } from "lucide-react";
+import { Hotel, ShoppingBag, Factory, Sprout } from "lucide-react";
 
 const industries = [
   {
-    name: "Industrial Automation",
+    name: "Tourism & Hospitality",
+    icon: Hotel,
+    desc: "Elevating guest experiences through smart reservation systems, automated check-ins, and data-driven hospitality management.",
+  },
+  {
+    name: "Retail & Supermarket",
+    icon: ShoppingBag,
+    desc: "Optimizing inventory management, AI-powered customer insights, and seamless omnichannel retail experiences.",
+  },
+  {
+    name: "Manufacturing",
     icon: Factory,
-    desc: "Predictive maintenance and autonomous control systems for manufacturing.",
+    desc: "Driving Industry 4.0 with IoT-enabled monitoring, predictive maintenance, and supply chain optimization.",
   },
   {
-    name: "Healthcare Tech",
-    icon: Activity,
-    desc: "IoMT devices and analytical platforms for patient monitoring and diagnostics.",
-  },
-  {
-    name: "EV & Mobility",
-    icon: Car,
-    desc: "Battery management systems and fleet intelligence software.",
-  },
-  {
-    name: "Smart Energy",
-    icon: Zap,
-    desc: "Grid optimization and real-time consumption monitoring.",
+    name: "Agriculture",
+    icon: Sprout,
+    desc: "Revolutionizing farming with precision IoT sensors, automated irrigation, and data-backed yield optimization.",
   },
 ];
 
