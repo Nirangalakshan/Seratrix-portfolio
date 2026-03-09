@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import {
@@ -33,7 +34,7 @@ export default function Contact() {
         from_email: formData.email,
         subject: formData.subject,
         message: formData.message,
-        to_email: "seratrix.cognition@gmail.com",
+        to_email: "info@seratrix.lk",
       };
 
       await emailjs.send(
@@ -104,8 +105,8 @@ export default function Contact() {
               <ContactInfoItem
                 icon={<Mail className="w-5 h-5" />}
                 title="Email Us"
-                value="seratrix.cognition@gmail.com"
-                href="mailto:seratrix.cognition@gmail.com"
+                value="info@seratrix.lk"
+                href="mailto:info@seratrix.lk"
               />
               <ContactInfoItem
                 icon={<Globe className="w-5 h-5" />}
@@ -116,8 +117,8 @@ export default function Contact() {
               <ContactInfoItem
                 icon={<MessageSquare className="w-5 h-5" />}
                 title="Chat with us"
-                value="Twitter / LinkedIn"
-                href="#"
+                value="Linkedin"
+                href="https://www.linkedin.com/company/seratrix/"
               />
             </div>
           </motion.div>
@@ -239,7 +240,12 @@ export default function Contact() {
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
             <div className="flex items-center gap-2 font-display text-lg font-bold text-foreground">
               <div className="w-8 h-8 rounded-lg bg-black flex items-center justify-center text-white text-[10px]">
-                <img src="/logos/label3.ico" alt="Logo" />
+                <Image
+                  src="/logos/label3.ico"
+                  alt="Logo"
+                  width={24}
+                  height={24}
+                />
               </div>
               Seratrix
             </div>
