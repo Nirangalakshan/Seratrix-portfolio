@@ -256,10 +256,11 @@ export default function Contact() {
           </div>
 
           <div className="flex gap-8">
-            <FooterLink href="#" label="LinkedIn" />
-            <FooterLink href="#" label="Twitter" />
-            <FooterLink href="#" label="GitHub" />
-            <FooterLink href="#" label="Legal" />
+            <FooterLink
+              href="https://www.linkedin.com/company/seratrix/"
+              label="LinkedIn"
+            />
+            <FooterLink href="https://github.com/Seratrix" label="GitHub" />
           </div>
         </div>
       </div>
